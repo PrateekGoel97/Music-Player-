@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NINJA STUDIO</title>
+	<link rel="stylesheet" type="text/css" href="musicplayer.css">
+      
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+     
+     <meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+</head>
+<body>
+
+   <header id="music-header">
+   	   <ul class="horizontal-list">
+           
+           <li>
+           	<img src="static/music.png" style="margin-right:5px">
+           </li>
+            
+            <li style="margin-right: 100px;">
+            	Ninja<div style="font-weight:600; font-size:20px;"> Studio</div>
+
+            </li>
+   	          
+
+   	       <li style="margin-right: 500px;">
+   	       	Favourites
+   	       </li>
+
+             <li>
+             	<button type="search">
+             	<i class="fas fa-search"></i>
+               </button>
+             </li>
+   	       
+
+            <li style="margin-right: 20px;">
+            	
+            	<input type="search" name="search" placeholder="Search..." id="search">
+
+            </li>
+           
+            <li style="margin-right: 40px;">
+            	<i class="far fa-bell"></i>
+            </li >
+          
+
+
+            <li>
+            	<img src="static/profile.png">
+            </li>
+
+   	   </ul>
+
+   </header>
+
+
+   <main>
+
+   	   <header id="carousel">
+
+            <div class="carousel-wrapper">
+               <span id="item-1"></span>
+               <span id="item-2"></span>
+               <span id="item-3"></span>
+               
+                <div class="carousel-item item-1">
+                  <a class="arrow arrow-prev" href="#item-3"></a>
+                  <a class="arrow arrow-next" href="#item-2"></a>
+                </div>
+  
+                <div class="carousel-item item-2">
+                     <a class="arrow arrow-prev" href="#item-1"></a>
+                     <a class="arrow arrow-next" href="#item-3"></a>
+                </div>
+  
+                <div class="carousel-item item-3">
+                  <a class="arrow arrow-prev" href="#item-2"></a>
+                  <a class="arrow arrow-next" href="#item-1"></a>
+                </div>
+            </div>
+
+   	   </header>
+
+   	    <section id="latest-release">
+
+   	    	<div>
+   	    		<span>Latest Release</span>
+   	    	</div>
+
+
+   	    	<div>
+   	    		  <ul id="latest-release-images">
+
+   	    		  	<div> 
+   	    		  		  <li>
+                              <div class="i-b">      
+                              <img src="static/onism.jpg">   
+                              </div>
+
+                              <div class="i-b f-style" >
+                              	<span >Onism</span>
+                              	<br>
+                              	AUG 11,2017
+                              </div>
+
+
+                              <div class="i-b f-style" style="position: relative; top: -56px; margin-left: 40px;" >
+                              	<span ><i class="fas fa-ellipsis-h"></i></span>
+                              	<br>
+                              	<span>4:44</span>
+                              </div>
+
+
+   	    		  		  	
+   	    		  		  </li>
+
+   	    		  	</div>
+                    
+
+                    <div> 
+   	    		  		  <li>
+                             <div class="i-b">
+                                    
+                                <img src="static/onism.jpg">   
+
+                              </div>
+
+                              <div class="i-b f-style">
+                              	<span >Onism</span>
+                              	<br>
+                              	AUG 11,2017
+                              </div>
+
+
+                              <div class="i-b f-style" style="position: relative; top: -56px;margin-left: 40px;" >
+                              	<span ><i class="fas fa-ellipsis-h"></i></span>
+                              	<br>
+                              	<span>4:44</span>
+                              </div>
+
+   	    		  		  	
+   	    		  		  </li>
+
+   	    		  	</div>
+
+                     	<div > 
+   	    		  		  <li>
+                             <div class="i-b">
+                                    
+                                <img src="static/onism.jpg">   
+
+                              </div>
+
+                              <div class="i-b f-style">
+                              	<span >Onism</span>
+                              	<br>
+                              	AUG 11,2017
+                              </div>
+
+
+                              <div class="i-b f-style" style="position: relative; top: -56px;margin-left: 40px;" >
+                              	<span ><i class="fas fa-ellipsis-h"></i></span>
+                              	<br>
+                              	<span>4:44</span>
+                              </div>
+
+   	    		  		  	
+   	    		  		  </li>
+
+   	    		  	</div>
+
+   	    		  	<div> 
+   	    		  		  <li>
+                             <div class="i-b">
+                                    
+                                <img src="static/onism.jpg">   
+
+                              </div>
+
+                              <div class="i-b f-style">
+                              	<span >Onism</span>
+                              	<br>
+                              	AUG 11,2017
+                              </div>
+
+
+                              <div class="i-b f-style" style="position: relative; top: -56px;margin-left: 40px;" >
+                              	<span ><i class="fas fa-ellipsis-h"></i></span>
+                              	<br>
+                              	<span>4:44</span>
+                              </div>
+
+   	    		  		  	
+   	    		  		  </li>
+
+   	    		  	</div>
+
+
+   	    </section>
+
+   	   	 <section id="popular-artists">
+
+   	   	 	<div>
+   	   	 		<span>Popular Artists</span>
+   	   	 	</div>
+
+   	   	 	<div id="pop-artists-image">
+                
+               <ul class="list">
+
+               	<li>
+   	   	 		       <img src="static/sheeran1.jpg" class="circle-image ">
+                   <div>
+   	   	 		       <span>Ed sheeran</span>
+   	   	 	         </div>
+                </li>
+   	   	 		
+                 <li>
+   	   	 		        <img src="static/coldplay.jpg" class="circle-image">
+   	   	 		        <div>
+   	   	 		          <span>Coldplay</span>
+   	   	 	          </div>
+                 </li>
+
+                 <li>
+                <img src="static/zayn.jpg" class="circle-image">
+                <div>
+   	   	 		<span>Zayn</span>
+   	   	 	    </div>
+                </li>
+
+                <li>
+                <img src="static/charlie.jpg" class="circle-image">
+                <div>
+   	   	 		<span>Charlie</span>
+   	   	 	    </div>
+                 </li>
+
+                <li>
+                <img src="static/imagine-dragons.jpg" class="circle-image">
+                <div>
+   	   	 		<span>Imagine Dragons</span>
+   	   	 	    </div>
+                </li>
+
+                 <li>
+                <img src="static/bruno.jpg" class="circle-image">
+                <div>
+   	   	 		<span>Bruno</span>
+   	   	 	    </div>
+                 </li>
+            </ul>
+
+   	   	 	</div>
+   	   	 	
+   	   	 </section>
+   	   	      
+         <section >
+
+         	<div id="stations">
+         		
+         		<ul id="stations-image" class="list">
+
+         			   <div class="pos">
+                          <li>
+                    	    <img src="static/station2.jpg" style="height: 150px; width: 150px; border-radius: 0%;" class="circle-image">
+                    	    <div class="text-centre">
+                    		  <span> Stations</span>
+                    	    </div>
+                    	  </li>
+                  </div>
+
+                    
+                   <div class="pos">
+                    <li >
+                    	<img src="static/love.jpg" class="circle-image">
+                    	<div class="text-centre">
+                    		<span> Love</span>
+                    	</div>
+                    	
+                    </li>
+                  </div>
+
+                     <div class="pos">
+                    <li >
+                    	<img src="static/retro.jpg" class="circle-image">
+                    	<div class="text-centre">
+                    		<span> Retro</span>
+                    	</div>
+                    	
+                    </li>
+                  </div>
+
+                     <div class="pos">
+                    <li >
+                    	<img src="static/chill.webp" class="circle-image">
+                    	<div class="text-centre"> 
+                    		<span>Chill</span>
+                    	</div>
+                    	
+                    </li>
+                  </div>
+
+                    <div class="pos">
+                    <li >
+                    	<img src="static/rock.jpg" class="circle-image">
+                    	<div class="text-centre">
+                    		<span> Rock</span>
+                    	</div>
+                    	
+                    </li>
+                  </div>
+
+                    <div class="pos">
+                    <li >
+                    	<img src="static/pop.jpg" class="circle-image">
+                    	<div class="text-centre">
+                    		<span>Pop</span>
+                    	</div>
+                    	
+                    </li>
+                  </div>
+
+         		</ul>
+
+         	</div>
+
+         	
+         </section>
+
+         <section id="type">
+            
+           <ul class="list">
+
+            <div class="pos">
+              <li>	
+         	     <img src="static/party.jpg" class="images mg" >
+         	     <div>
+         	 	   <span>Party</span>
+         	      </div>
+         	    </li>
+            </div>
+
+            <div class="pos">
+              <li>	
+         	     <img src="static/electronic.jpg" class="images mg">
+         	     <div>
+         	 	   <span>Electronic</span>
+         	      </div>
+         	  </li>
+            </div>
+
+            <div class="pos">
+              <li>	
+         	     <img src="static/road.jpg" class="images mg">
+         	     <div>
+         	 	   <span>Road</span>
+         	      </div>
+         	  </li>
+            </div>
+
+            </ul>   
+         	
+         </section>
+          
+         <section id="latest-english">
+
+         	<div>
+   	   	 		<span>Latest English</span>
+   	   	 	</div>
+
+   	   	 	<div id="latest-eng-image">
+                
+               <ul class="list">
+
+               	<li>
+   	   	 		      <img src="static/onism6.jpg" class="eh-images">
+   	   	 		      <div>
+   	   	 		      <span>Onism <div>AUG 11,2017</div> </span>
+   	   	 	        </div>
+                </li>
+
+
+               	<li>
+   	   	 		<img src="static/onism1.jpg" class="eh-images">
+   	   	 		<div>
+   	   	 		<span>Onism <div>AUG 11,2017 </div></span>
+   	   	 	    </div>
+                </li>
+
+
+
+               	<li>
+   	   	 		<img src="static/onism2.jpg" class="eh-images">
+   	   	 		<div>
+   	   	 		<span>Onism <div>AUG 11,2017 </div></span>
+   	   	 	    </div>
+                </li>
+
+
+               	<li>
+   	   	 		<img src="static/onism3.jpg" class="eh-images">
+   	   	 		<div>
+   	   	 		<span>Onism <div>AUG 11,2017 </div></span>
+   	   	 	    </div>
+                </li>
+
+
+               	<li>
+   	   	 		<img src="static/onism4.jpg" class="eh-images">
+   	   	 		<div>
+   	   	 		<span>Onism <div>AUG 11,2017 </div></span>
+   	   	 	    </div>
+                </li>
+
+
+               	<li>
+   	   	 		<img src="static/onism5.jpg" class="eh-images">
+   	   	 		<div>
+   	   	 		<span>Onism <div>AUG 11,2017</div></span>
+   	   	 	    </div>
+                </li>
+   	   	 		
+                 
+
+   	   	 	</div>
+         </section>
+   	      
+          <section id="latest-hindi">
+          	
+          	<div>
+   	   	 		<span>Latest Hindi</span>
+   	   	 	</div>
+
+   	   	 	<div id="latest-hindi-image">
+                
+               <ul class="list">
+
+               	<li>
+   	   	 		<img src="static/sakhiya1.jpg" class="eh-images">
+   	   	 		
+                </li>
+
+
+               	<li>
+   	   	 		<img src="static/breakup.jpg" class="eh-images">
+   	   	 		
+                </li>
+
+
+
+               	<li>
+   	   	 		<img src="static/daru.jpg" class="eh-images">
+   	   	 		
+                </li>
+
+
+               	<li>
+   	   	 		<img src="static/peete.jpg" class="eh-images">
+   	   	 		
+                </li>
+
+
+               	<li>
+   	   	 		<img src="static/chan.jpg" class="eh-images">
+   	   	 		
+                </li>
+
+
+               	<li>
+   	   	 		<img src="static/old.jpg" class="eh-images">
+   	   	 		
+                </li>
+   	   	 		
+                 
+
+   	   	 	</div>
+          </section>
+
+
+   </main>
+
+   <aside>
+
+   	       <div id="aside-heading">
+   	 	  	<span style="margin-right: 200px;">Playlist</span>
+   	 	  	<span id="dropdown">queue</span>
+   	 	    </div>
+   	 
+   	      <ul id="aside-images" >
+   	      	
+
+              <div class="mg-bottom">
+               	<li>
+                  
+                    <div class="outer">
+               		   <span class="number">01</span>
+               	     <img src="static/onism2.jpg"> 
+                    </div> 
+                      
+                       
+               	      <div class="inner" >
+                      <span class="style-upper " style="margin-right: 145px;">Mirage</span>
+                      <i class="far fa-heart"></i>
+                      <br>
+                      <span class="style-lower">Else</span>   
+                     </div> 
+                </li>     
+              </div>
+
+                <div class="mg-bottom">
+               	<li>
+                     <div class="outer">
+               		 <span class="number">02</span>
+               	     <img src="static/onism1.jpg" > 
+                     </div> 
+
+               	      <div class="inner" >
+                      <span class="style-upper" style="margin-right: 95px;">Worry bout us</span>
+                      <i class="far fa-heart"></i>
+                      <br>
+                      <span class="style-lower">Rosie Lowe</span>   
+
+                      </div>   
+
+               	 </li>     
+               </div>
+
+                <div class="mg-bottom">
+               	<li>
+                     <div class="outer">
+               		 <span class="number">03</span>
+               	     <img src="static/onism5.jpg" > 
+                     </div> 
+
+               	      <div class="inner" >
+                      <span class=" style-upper" style="margin-right: 132px;">New Skin</span>
+                      <i class="far fa-heart"></i>
+                      <br>
+                      <span class="style-lower">Flume</span>   
+
+                      </div>   
+
+               	 </li>     
+               </div>
+
+                <div class="mg-bottom">
+               	<li>
+                     <div class="outer">
+               		 <span class="number">04</span>
+               	     <img src="static/sakhiya1.jpg" > 
+                     </div> 
+
+               	      <div class="inner" >
+                      <span class=" style-upper" style="margin-right: 145px;">Sakhiya</span>
+                      <i class="far fa-heart"></i>
+                      <br>
+                      <span class="style-lower">Maninder</span>   
+
+                      </div>   
+
+               	 </li>     
+               </div>
+
+
+                <div class="mg-bottom">
+               	<li>
+                     <div class="outer">
+               		 <span class="number">05</span>
+               	     <img src="static/imagine.jpg" > 
+                     </div> 
+
+               	      <div class="inner" >
+                      <span class="style-upper" style="margin-right: 147px;">Imagine</span>
+                      <i class="far fa-heart"></i>
+                      <br>
+                      <span class="style-lower">John Lenon</span>   
+
+                      </div>   
+
+               	 </li>     
+               </div>
+
+                <div class="mg-bottom">
+               	<li>
+                     <div class="outer">
+               		 <span class="number">06</span>
+               	     <img src="static/one.png" > 
+                     </div> 
+
+               	      <div class="inner" >
+                      <span class=" style-upper" style="margin-right: 177px;">One</span>
+                      <i class="far fa-heart"></i>
+                      <br>
+                      <span class="style-lower">U2</span>   
+
+                      </div>   
+
+               	 </li>     
+               </div>
+
+
+                <div class="mg-bottom">
+               	<li>
+                     <div class="outer">
+               		 <span class="number">08</span>
+               	     <img src="static/Khalibali.webp" > 
+                     </div> 
+
+               	      <div class="inner" >
+                      <span class="style-upper" style="margin-right: 145px;">Khalibali</span>
+                      <i class="far fa-heart"></i>
+                      <br>
+                      <span class="style-lower">Shivam Pathak</span>   
+
+                      </div>   
+
+               	 </li>     
+               </div>
+
+               
+
+               	 </li>     
+               </div>
+
+
+
+   	      </ul>
+
+
+   	 </ul>
+
+
+
+   </aside>
+
+
+
+</body>
+</html> 

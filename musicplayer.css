@@ -1,0 +1,369 @@
+body{
+	font-size: 20px;
+	font-family: sans-serif;
+	margin:0px 100px 0px;
+	background-color: #020b1f;
+	color: white;
+}
+
+
+.horizontal-list{
+	list-style: none;
+	 display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom:10px;
+    
+}
+
+
+.horizontal-list li img{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+}
+
+
+#search{
+	width: 300px;
+	height: 30px;
+	border-radius: 10px;
+	padding-left: 20px; 
+	background-color: #051438;
+	color: white;
+	border-style: none;    
+}
+
+button[type=search]{
+    border:none;
+	position: relative;
+	left: 10px;
+	padding: 6.6px;
+	background-color:  #051438;
+	color: white;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+	cursor: pointer;
+}
+
+
+
+/*...main...*/
+
+main{
+	width:65%;
+	height: auto;
+	margin-left:3%;
+	display: inline-block;
+
+}
+
+/**..carousel...*/
+
+.carousel-wrapper{
+  height:400px;
+  position:relative;
+  width:800px;
+  margin:0 auto;
+}
+.carousel-item{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:25px 50px;
+  opacity:0;
+  transition: all 0.5s ease-in-out;
+}
+.arrow{
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+}
+
+.arrow-prev{
+  left:-22px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(135deg);
+}
+ 
+.arrow-next{
+    right:-22px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(-45deg);
+  }
+
+
+
+/*Select every element*/
+[id^="item"] {
+    display: none;
+  }
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+  background:url('static/billboard.jpg');
+  background-size:cover;
+  background-position: center;
+  
+  }
+.item-2{
+  background:url('static/bieber.jpg');
+   background-size:cover;
+   background-position: center;
+}
+.item-3{
+  background:url('static/mcfly.jpg');
+   background-size:cover;
+   background-position: center;
+
+}
+
+*:target ~ .item-1 {
+    opacity: 0;
+  }
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+  }
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+  }
+
+
+/*...latest release...*/
+
+#latest-release-images>div{
+	margin-right: 100px;
+	margin-top: 5px;
+}
+
+.f-style{
+	font-size: 12px; 
+	color: grey;
+	 position: relative;
+	 top:-40px;
+}
+
+	
+
+#latest-release-images {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0px;
+	justify-content: space-around;
+}
+
+#latest-release-images li img{
+	height: 80px;
+	width: 80px;
+}
+
+/*...popular artists...*/
+
+
+#pop-artists-image li img{
+	height: 130px;
+    width: 130px;
+    }
+
+
+#pop-artists-image li div{
+	display: flex;
+	justify-content: space-around;
+	font-size: 15px;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+
+/*..stations...*/
+
+
+
+#stations-image{
+	
+	background-color:  #051438;
+	height: auto;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+
+#stations-image li img{
+	height: 100px;
+    width: 100px;   
+}
+
+
+/*..type...*/
+
+#type div span{
+	position:absolute;
+	top:50%;
+	left:40%;
+	font-weight: 600;	
+}
+
+/*.latest english..*/
+
+
+#latest-eng-image li div{
+	
+	font-size: 10px;
+	margin-top: 5px;
+	
+}
+
+/*...aside...*/
+aside{
+	width:30%;
+	vertical-align: top;
+   display: inline-block;
+	
+}
+
+#aside-heading{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 25px;
+}
+
+
+#dropdown{
+	font-size: 15px;
+}
+
+#aside-images{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	list-style: none;
+	padding: 0px;
+}
+
+#aside-images li img{
+	height: 60px;
+	width: 60px;
+	border-radius: 5px;
+
+}
+
+
+.style-upper{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.style-lower{
+  color: grey;
+  font-size: 12px;
+
+}
+
+.side{
+	display: inline-block;
+}
+.outer{
+	display: inline-block;
+}
+
+.inner{
+	display: inline-block;
+}
+
+.number{
+	font-size: 12px;
+     margin-right: 2px; 
+     top: -20px;
+     position: relative;
+     color:grey;
+}
+
+
+/*...section...*/
+
+section{
+	display:flex;
+	flex-wrap: wrap; 
+	flex-direction: column;
+	margin-top: 10px;
+}
+
+/*...list style...*/
+.list{
+	list-style: none;
+	display: flex;
+	padding: 0px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+/*...text in a image...*/
+
+.text-centre{
+	position:absolute;
+	top:40%;
+	left:30%;	
+}
+
+.pos{
+	position: relative;
+}
+
+/*..circular images...*/
+.circle-image{
+	border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 10px
+}
+
+
+
+.mg{
+	margin:5px 0px;
+}
+
+.mg-left{
+	margin-left: 0px;
+}
+
+.mg-top{
+	margin-top: 4px;
+}
+
+.mg-right{
+	margin-right: 150px;
+}
+/*... Latest english and hindi images...*/
+
+.eh-images{
+
+height: 130px;
+width: 130px;
+
+}
+
+.mg-bottom{
+	margin-bottom: 10px;
+}
+
+.i-b{
+	display: inline-block;
+}
+
+
+.images{
+    height:190px;
+	width:270px;
+    margin:20px 5px;      
+}
